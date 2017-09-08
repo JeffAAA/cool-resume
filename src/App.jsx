@@ -9,7 +9,6 @@ import _ from 'lodash'
 REM()
 let converter = new Showdown.Converter();
 
-
 const CONFIG = [
   {
     nodename: 'style__work__area',
@@ -92,7 +91,7 @@ class App extends Component {
           <style dangerouslySetInnerHTML={{ __html: state.styleText }}></style>
         </div>
         <div className="resume__work__area" ref={(node) => { this.resumeWorkAreaNode = node }}>
-          <div dangerouslySetInnerHTML={{ __html: state.resumeText }}></div>
+          <div dangerouslySetInnerHTML={{ __html: state.domResumeText }}></div>
         </div>
       </div>
     )
